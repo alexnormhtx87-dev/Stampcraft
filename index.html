@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StampCraft — Watermark Tool</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      max-width: 100%;
+    }
+    #controls {
+      margin-top: 10px;
+    }
+    input, button {
+      margin: 5px 0;
+      padding: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>StampCraft — Watermark Your Image</h1>
+  <input type="file" id="upload" accept="image/*"><br>
+  <input type="text" id="watermarkText" placeholder="Enter watermark text"><br>
+  <canvas id="canvas" width="800" height="600"></canvas><br>
+  <button id="download">Download Watermarked Image</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
